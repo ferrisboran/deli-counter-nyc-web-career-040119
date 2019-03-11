@@ -12,6 +12,6 @@ def take_a_number(current_line,name)
   puts "Welcome, #{name}. You are number #{current_line.index(name) + 1} in line."
 end
 
-def now_serving
-
+def now_serving(current_line)
+  puts current_line == [] ? "There is nobody waiting to be served!" : "Currently serving #{current_line.shift()}."
 end
